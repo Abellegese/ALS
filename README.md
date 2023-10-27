@@ -52,16 +52,6 @@ prediciton for other user who loved lord of the rings
 1252                                     Heathers (1989)                                           Comedy
 1262                          Room with a View, A (1986)                                    Drama|Romance
 1483            Shall We Dance? (Shall We Dansu?) (1996)                             Comedy|Drama|Romance
-1923                  Back to the Future Part III (1990)                  Adventure|Comedy|Sci-Fi|Western
-1936                                       Lolita (1997)                                    Drama|Romance
-2303                         Prince of Egypt, The (1998)                                Animation|Musical
-2332   Christmas Vacation (National Lampoon's Christm...                                           Comedy
-2380                          Crocodile Dundee II (1988)                          Action|Adventure|Comedy
-2450                             Cruel Intentions (1999)                                            Drama
-2591        Austin Powers: The Spy Who Shagged Me (1999)                          Action|Adventure|Comedy
-2632                                Runaway Bride (1999)                                   Comedy|Romance
-2874                          Straight Story, The (1999)                                  Adventure|Drama
-3021                                  Toy Story 2 (1999)      Adventure|Animation|Children|Comedy|Fantasy
 4572                               Turner & Hooch (1989)                                     Comedy|Crime
 4772                                 Donnie Darko (2001)                    Drama|Mystery|Sci-Fi|Thriller
 4887   Lord of the Rings: The Fellowship of the Ring,...                                Adventure|Fantasy
