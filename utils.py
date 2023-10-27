@@ -167,6 +167,7 @@ class Utils:
         return out
 
     def _reset_params(self):
+        #resetting the parameters of the model
         self.user_matrix = np.random.normal(0, 1/np.sqrt(self.latent_dim),size=(self.num_user, self.latent_dim))
         self.item_matrix = np.random.normal(0, 1/np.sqrt(self.latent_dim),size=(self.num_item, self.latent_dim))
         #Bias initialization
