@@ -34,7 +34,7 @@ Given the dummy use we can also predict the movies for the 25 million dataset
   style="display: inline-block; max-width: 200px;height:300px">
 
 ## Prediction
-prediciton for other user who loved adventure
+prediciton for other user who loved lord of the rings 
 ```bash
                                                  title                                           genres
 12                                          Balto (1995)                     Adventure|Animation|Children
@@ -87,37 +87,5 @@ prediciton for other user who loved adventure
 26834  A Pigeon Sat on a Branch Reflecting on Existen...                                     Comedy|Drama
 37182                         10 Cloverfield Lane (2016)                                         Thriller
 51294                  All the Money in the World (2017)                     Crime|Drama|Mystery|Thriller
-## Predictions
-prediction for dummy user who liked lord of the rings five star
-```bash
-12                                          Balto (1995)                     Adventure|Animation|Children
-15                                         Casino (1995)                                      Crime|Drama
-194                                       Species (1995)                                    Horror|Sci-Fi
-461                          Hot Shots! Part Deux (1993)                                Action|Comedy|War
-522                              Schindler's List (1993)                                        Drama|War
-585                     Silence of the Lambs, The (1991)                            Crime|Horror|Thriller
-710                         Great White Hype, The (1996)                                           Comedy
-926                                My Man Godfrey (1936)                                   Comedy|Romance
-1170                                       Aliens (1986)                   Action|Adventure|Horror|Sci-Fi
-1182                                   Goodfellas (1990)                                      Crime|Drama
-1186                                          Ran (1985)                                        Drama|War
-1249                                     Fantasia (1940)               Animation|Children|Fantasy|Musical
-1252                                     Heathers (1989)                                           Comedy
-1262                          Room with a View, A (1986)                                    Drama|Romance
-1483            Shall We Dance? (Shall We Dansu?) (1996)                             Comedy|Drama|Romance
-1923                  Back to the Future Part III (1990)                  Adventure|Comedy|Sci-Fi|Western
-1936                                       Lolita (1997)                                    Drama|Romance
-2303                         Prince of Egypt, The (1998)                                Animation|Musical
-2332   Christmas Vacation (National Lampoon's Christm...                                           Comedy
-2380                          Crocodile Dundee II (1988)                          Action|Adventure|Comedy
-2450                             Cruel Intentions (1999)                                            Drama
-2591        Austin Powers: The Spy Who Shagged Me (1999)                          Action|Adventure|Comedy
-2632                                Runaway Bride (1999)                                   Comedy|Romance
-2874                          Straight Story, The (1999)                                  Adventure|Drama
-3021                                  Toy Story 2 (1999)      Adventure|Animation|Children|Comedy|Fantasy
-4572                               Turner & Hooch (1989)                                     Comedy|Crime
-4772                                 Donnie Darko (2001)                    Drama|Mystery|Sci-Fi|Thriller
-4887   Lord of the Rings: The Fellowship of the Ring,...                                Adventure|Fantasy
-4889                            Beautiful Mind, A (2001)                                    Drama|Romance
-7039                                    Peter Pan (2003)                Action|Adventure|Children|Fantasy
+
 
