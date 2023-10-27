@@ -25,6 +25,13 @@ Given the dummy use we can also predict the movies for the 25 million dataset
 ```bash
   python predict.py --path parameters/parameters_25m.pickle --n 0 --fact 1
 ```
+
+##RMSE for the 25M dataset
+<img
+  src="/docs/metrics_with_featues_25m_page-0001.jpg"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 Predictions
 ```bash
                                                    title                                        genres
