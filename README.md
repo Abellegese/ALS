@@ -32,43 +32,90 @@ Given the dummy use we can also predict the movies for the 25 million dataset
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; max-width: 200px;height:300px">
-  
-## Predictions
-prediction for dummy user 1 and 2
-```bash
-                                                   title                                        genres
-192                                         Smoke (1995)                                  Comedy|Drama
-335                                      War, The (1994)                           Adventure|Drama|War
-351                                  Forrest Gump (1994)                      Comedy|Drama|Romance|War
-362                                     Mask, The (1994)                   Action|Comedy|Crime|Fantasy
-429                                   Cliffhanger (1993)                     Action|Adventure|Thriller
-437                                Demolition Man (1993)                       Action|Adventure|Sci-Fi
-452                                 Fugitive, The (1993)                                      Thriller
-536                                  Blade Runner (1982)                        Action|Sci-Fi|Thriller
-585                     Silence of the Lambs, The (1991)                         Crime|Horror|Thriller
-650                     James and the Giant Peach (1996)  Adventure|Animation|Children|Fantasy|Musical
-934                              Bringing Up Baby (1938)                                Comedy|Romance
-948                            African Queen, The (1951)                  Adventure|Comedy|Romance
 
-                                                  title                                     genres
-46                           Seven (a.k.a. Se7en) (1995)                           Mystery|Thriller
-80        Things to Do in Denver When You're Dead (1995)                        Crime|Drama|Romance
-219                             Circle of Friends (1995)                              Drama|Romance
-231                                  Exit to Eden (1994)                                     Comedy
-259                            Little Princess, A (1995)                             Children|Drama
-429                                   Cliffhanger (1993)                  Action|Adventure|Thriller
-475                                 Jurassic Park (1993)           Action|Adventure|Sci-Fi|Thriller
-545               Nightmare Before Christmas, The (1993)         Animation|Children|Fantasy|Musical
-628                                Jack and Sarah (1995)                                    Romance
-642                                   Dragonheart (1996)                   Action|Adventure|Fantasy
-734    Dr. Strangelove or: How I Learned to Stop Worr...                                 Comedy|War
-840                                Godfather, The (1972)                                Crime|Drama
-899                            Gone with the Wind (1939)                          Drama|Romance|War
-944                                 39 Steps, The (1935)                     Drama|Mystery|Thriller
-1035         William Shakespeare's Romeo + Juliet (1996)                              Drama|Romance
-1083   Microcosmos (Microcosmos: Le peuple de l'herbe...                                Documentary
-1120         Wallace & Gromit: The Wrong Trousers (1993)            Animation|Children|Comedy|Crime
-1229                            Great Escape, The (1963)                 Action|Adventure|Drama|War
-1251                               Big Sleep, The (1946)                    Crime|Film-Noir|Mystery
-1371                                      Michael (1996)               Comedy|Drama|Fantasy|Romance
-1527                                      Contact (1997)                               Drama|Sci-Fi
+## Prediction
+prediciton for other user who loved adventure
+12                                          Balto (1995)                     Adventure|Animation|Children
+15                                         Casino (1995)                                      Crime|Drama
+194                                       Species (1995)                                    Horror|Sci-Fi
+461                          Hot Shots! Part Deux (1993)                                Action|Comedy|War
+522                              Schindler's List (1993)                                        Drama|War
+585                     Silence of the Lambs, The (1991)                            Crime|Horror|Thriller
+710                         Great White Hype, The (1996)                                           Comedy
+926                                My Man Godfrey (1936)                                   Comedy|Romance
+1170                                       Aliens (1986)                   Action|Adventure|Horror|Sci-Fi
+1182                                   Goodfellas (1990)                                      Crime|Drama
+1186                                          Ran (1985)                                        Drama|War
+1249                                     Fantasia (1940)               Animation|Children|Fantasy|Musical
+1252                                     Heathers (1989)                                           Comedy
+1262                          Room with a View, A (1986)                                    Drama|Romance
+1483            Shall We Dance? (Shall We Dansu?) (1996)                             Comedy|Drama|Romance
+1923                  Back to the Future Part III (1990)                  Adventure|Comedy|Sci-Fi|Western
+1936                                       Lolita (1997)                                    Drama|Romance
+2303                         Prince of Egypt, The (1998)                                Animation|Musical
+2332   Christmas Vacation (National Lampoon's Christm...                                           Comedy
+2380                          Crocodile Dundee II (1988)                          Action|Adventure|Comedy
+2450                             Cruel Intentions (1999)                                            Drama
+2591        Austin Powers: The Spy Who Shagged Me (1999)                          Action|Adventure|Comedy
+2632                                Runaway Bride (1999)                                   Comedy|Romance
+2874                          Straight Story, The (1999)                                  Adventure|Drama
+3021                                  Toy Story 2 (1999)      Adventure|Animation|Children|Comedy|Fantasy
+4572                               Turner & Hooch (1989)                                     Comedy|Crime
+4772                                 Donnie Darko (2001)                    Drama|Mystery|Sci-Fi|Thriller
+4887   Lord of the Rings: The Fellowship of the Ring,...                                Adventure|Fantasy
+4889                            Beautiful Mind, A (2001)                                    Drama|Romance
+7039                                    Peter Pan (2003)                Action|Adventure|Children|Fantasy
+7052                                        Osama (2003)                                            Drama
+8269                               Ocean's Twelve (2004)                     Action|Comedy|Crime|Thriller
+10253                                      Capote (2005)                                      Crime|Drama
+10838                                   Clerks II (2006)                                           Comedy
+11163                               Prestige, The (2006)                    Drama|Mystery|Sci-Fi|Thriller
+11435                                      Zodiac (2007)                             Crime|Drama|Thriller
+11700   Harry Potter and the Order of the Phoenix (2007)                     Adventure|Drama|Fantasy|IMAX
+11862                            30 Days of Night (2007)                                  Horror|Thriller
+13285                                   Star Trek (2009)                     Action|Adventure|Sci-Fi|IMAX
+13531        Imaginarium of Doctor Parnassus, The (2009)                                    Drama|Fantasy
+13575                                  District 9 (2009)                          Mystery|Sci-Fi|Thriller
+14156                                 Daybreakers (2010)                     Action|Drama|Horror|Thriller
+14983                                  Mr. Nobody (2009)                     Drama|Fantasy|Romance|Sci-Fi
+16523                             Kung Fu Panda 2 (2011)  Action|Adventure|Animation|Children|Comedy|IMAX
+17674                                Intouchables (2011)                                     Comedy|Drama
+19928                            Lone Ranger, The (2013)                    Action|Adventure|Western|IMAX
+25070                   Guardians of the Galaxy 2 (2017)                          Action|Adventure|Sci-Fi
+26834  A Pigeon Sat on a Branch Reflecting on Existen...                                     Comedy|Drama
+37182                         10 Cloverfield Lane (2016)                                         Thriller
+51294                  All the Money in the World (2017)                     Crime|Drama|Mystery|Thriller
+## Predictions
+prediction for dummy user who liked lord of the rings five star
+```bash
+12                                          Balto (1995)                     Adventure|Animation|Children
+15                                         Casino (1995)                                      Crime|Drama
+194                                       Species (1995)                                    Horror|Sci-Fi
+461                          Hot Shots! Part Deux (1993)                                Action|Comedy|War
+522                              Schindler's List (1993)                                        Drama|War
+585                     Silence of the Lambs, The (1991)                            Crime|Horror|Thriller
+710                         Great White Hype, The (1996)                                           Comedy
+926                                My Man Godfrey (1936)                                   Comedy|Romance
+1170                                       Aliens (1986)                   Action|Adventure|Horror|Sci-Fi
+1182                                   Goodfellas (1990)                                      Crime|Drama
+1186                                          Ran (1985)                                        Drama|War
+1249                                     Fantasia (1940)               Animation|Children|Fantasy|Musical
+1252                                     Heathers (1989)                                           Comedy
+1262                          Room with a View, A (1986)                                    Drama|Romance
+1483            Shall We Dance? (Shall We Dansu?) (1996)                             Comedy|Drama|Romance
+1923                  Back to the Future Part III (1990)                  Adventure|Comedy|Sci-Fi|Western
+1936                                       Lolita (1997)                                    Drama|Romance
+2303                         Prince of Egypt, The (1998)                                Animation|Musical
+2332   Christmas Vacation (National Lampoon's Christm...                                           Comedy
+2380                          Crocodile Dundee II (1988)                          Action|Adventure|Comedy
+2450                             Cruel Intentions (1999)                                            Drama
+2591        Austin Powers: The Spy Who Shagged Me (1999)                          Action|Adventure|Comedy
+2632                                Runaway Bride (1999)                                   Comedy|Romance
+2874                          Straight Story, The (1999)                                  Adventure|Drama
+3021                                  Toy Story 2 (1999)      Adventure|Animation|Children|Comedy|Fantasy
+4572                               Turner & Hooch (1989)                                     Comedy|Crime
+4772                                 Donnie Darko (2001)                    Drama|Mystery|Sci-Fi|Thriller
+4887   Lord of the Rings: The Fellowship of the Ring,...                                Adventure|Fantasy
+4889                            Beautiful Mind, A (2001)                                    Drama|Romance
+7039                                    Peter Pan (2003)                Action|Adventure|Children|Fantasy
+
