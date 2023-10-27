@@ -32,7 +32,8 @@ Given the dummy use we can also predict the movies for the 25 million dataset
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; max-width: 200px;height:300px">
-Predictions
+  
+## Predictions
 ```bash
                                                    title                                        genres
 192                                         Smoke (1995)                                  Comedy|Drama
