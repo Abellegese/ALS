@@ -35,6 +35,7 @@ Given the dummy use we can also predict the movies for the 25 million dataset
 
 ## Prediction
 prediciton for other user who loved adventure
+                                                 title                                           genres
 12                                          Balto (1995)                     Adventure|Animation|Children
 15                                         Casino (1995)                                      Crime|Drama
 194                                       Species (1995)                                    Horror|Sci-Fi
