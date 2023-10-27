@@ -49,7 +49,7 @@ prediction for dummy user 1 and 2
 650                     James and the Giant Peach (1996)  Adventure|Animation|Children|Fantasy|Musical
 934                              Bringing Up Baby (1938)                                Comedy|Romance
 948                            African Queen, The (1951)                  Adventure|Comedy|Romance
-------------------------------------------------------------------------------------------------------
+
                                                   title                                     genres
 46                           Seven (a.k.a. Se7en) (1995)                           Mystery|Thriller
 80        Things to Do in Denver When You're Dead (1995)                        Crime|Drama|Romance
