@@ -34,7 +34,7 @@ Given the dummy use we can also predict the movies for the 25 million dataset
   style="display: inline-block; max-width: 200px;height:300px">
 
 ## Prediction
-prediciton for other user who loved lord of the rings 
+prediciton for other user who give lord of the rings 5 star rating. User 99
 ```bash
                                                  title                                           genres
 461                          Hot Shots! Part Deux (1993)                                Action|Comedy|War
