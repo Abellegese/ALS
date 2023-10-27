@@ -44,7 +44,10 @@ class Utils:
         plt.show()
     
     def frequency(self):
-
+        """
+        Function to compute the frequency of the item and user
+        used to plot power law graphs
+        """
         userIdx = [len(row) for row in self.user_data] 
         itemIdx = [len(row) for row in self.item_data] 
 
@@ -95,8 +98,7 @@ class Utils:
     def get_items(self, contains_feature=True):
         """ 
         Number of movies for a given genre 
-        Args: l: feature(genre index)
-              contains_feature: Used to return the movies that corresponding to a 
+        Args: contains_feature: Used to return the movies that corresponding to a 
               certain feature if it is True else it returns that the movie that not 
               corresponding to a given feature
         """
