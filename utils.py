@@ -9,12 +9,12 @@ class Utils:
     def plot(self, file_name, plot, save=True):
         #Lets only plot RMSE..[Useful metrics]
         fig, ax = plt.subplots(figsize=(14,6))
-        # plt.subplot(1, 2, 1)  # row 1, column 2, count 1
-        # plt.plot(np.arange(0, len(self.rmse),1), np.array(self.rmse), color='g')
-        # plt.plot(np.arange(0, len(self.rmse_test),1), np.array(self.rmse_test), color='r')
-        # plt.legend(['training rmse', 'test rmse'])
-        # plt.xlabel('# iterations')
-        # plt.ylabel('RMSE')
+        plt.subplot(1, 2, 1)  # row 1, column 2, count 1
+        plt.plot(np.arange(0, len(self.rmse),1), np.array(self.rmse), color='g')
+        plt.plot(np.arange(0, len(self.rmse_test),1), np.array(self.rmse_test), color='r')
+        plt.legend(['training rmse', 'test rmse'])
+        plt.xlabel('# iterations')
+        plt.ylabel('RMSE')
         #plot for log loss
         if plot:
             plt.subplot(1, 2, 2)  # row 1, column 2, count 1
@@ -87,7 +87,7 @@ class Utils:
     def get_features(self):
         """Function to extract Fn and features for a given movie"""
         #i = self.mapper[i]
-        with open('item_feature_dict.pkl', 'rb') as f:
+        with open('docs/item_feature_dict.pkl', 'rb') as f:
             dicts = pickle.load(f)
         return dicts
 
@@ -102,10 +102,10 @@ class Utils:
         """
         # Extrat item given genres contains in csv file
         if contains_feature:
-            with open('feature_item_dict_True.pkl', 'rb') as f:
+            with open('docs/feature_item_dict_True.pkl', 'rb') as f:
                 dicts = pickle.load(f)
         else:
-            with open('feature_item_dict_False.pkl', 'rb') as f:
+            with open('docs/feature_item_dict_False.pkl', 'rb') as f:
                 dicts = pickle.load(f)
         # System Id for a given generes
         return dicts
@@ -146,8 +146,9 @@ class Utils:
             loss += (self.thau/2)*np.dot(self.user_matrix[i, :], self.user_matrix[i, :])
 
         return loss, np.sqrt(rmse/count)
-        
-    def compute_latent(self, bound=(1, 20)):
+
+    @staticmethod
+    def compute_latent(model, bound=(1, 20)):
         """
         Analysing The RMSE vesrus latent dimension:
         The dimension that result the minimum average loss will be selected
@@ -157,7 +158,17 @@ class Utils:
         """
         out = []
         for i in range(bound[0], bound[1]):
-            self.latent_dim = i
-            self.fit(20)
-            out.append((i, min(mean(self.rmse_test))))
+            model._reset_params()
+            model.rmse_test = []
+            model.rmse = []
+            model.latent_dim = i
+            model.fit(10)
+            out.append([model.rmse_test])
         return out
+
+    def _reset_params(self):
+        self.user_matrix = np.random.normal(0, 1/np.sqrt(self.latent_dim),size=(self.num_user, self.latent_dim))
+        self.item_matrix = np.random.normal(0, 1/np.sqrt(self.latent_dim),size=(self.num_item, self.latent_dim))
+        #Bias initialization
+        self.user_bias = np.zeros((self.num_user))
+        self.item_bias = np.zeros((self.num_item))
