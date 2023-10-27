@@ -175,3 +175,26 @@ class Utils:
         #Bias initialization
         self.user_bias = np.zeros((self.num_user))
         self.item_bias = np.zeros((self.num_item))
+        
+    def _get_features_dict(self):
+        return  { 0:'Action',
+                        1:'Adventure',
+                        2:'Animation',
+                        3:'Children',
+                        4:'Comedy',
+                        5:'Crime',
+                        6:'Documentary',
+                        7:'Drama',
+                        8:'Fantasy',
+                        9:'Film-Noir',
+                        10:'Horror',
+                        11:'Musical',
+                        12:'Mystery',
+                        13:'Romance',
+                        14:'Sci-Fi',
+                        15:'Thriller',
+                        16:'War',
+                        17:'Western',
+                        18:'(no genres listed)',
+                        19:'IMAX'
+                }
