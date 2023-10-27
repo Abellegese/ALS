@@ -31,7 +31,7 @@ Given the dummy use we can also predict the movies for the 25 million dataset
   src="/docs/metrics_with_featues_25m_page-0001.jpg"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 200px">
 Predictions
 ```bash
                                                    title                                        genres
