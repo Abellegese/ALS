@@ -37,9 +37,6 @@ Given the dummy use we can also predict the movies for the 25 million dataset
 prediciton for other user who loved lord of the rings 
 ```bash
                                                  title                                           genres
-12                                          Balto (1995)                     Adventure|Animation|Children
-15                                         Casino (1995)                                      Crime|Drama
-194                                       Species (1995)                                    Horror|Sci-Fi
 461                          Hot Shots! Part Deux (1993)                                Action|Comedy|War
 522                              Schindler's List (1993)                                        Drama|War
 585                     Silence of the Lambs, The (1991)                            Crime|Horror|Thriller
