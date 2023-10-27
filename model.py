@@ -29,7 +29,8 @@ class ALSModel(Utils):
                        latent_dim=5, 
                        thau = 0.001,
                        gamma=0.001,
-                       lamda=0.001):
+                       lamda=0.001
+                ):
 
         self.user_data, self.item_data = data
         self.test_data = test_data
@@ -62,9 +63,9 @@ class ALSModel(Utils):
         self.rmse_test = []
         #Initialize Item-feature & Feature-Item datastructure
         self.item_feature_dict = self.get_features()
-        #Select item for a given item
+        #Select item for a given feature
         self.feature_item_dict_true = self.get_items()
-        #Select item that does not a given item
+        #Select item that does not belong to a given feature
         self.feature_item_dict_false = self.get_items(contains_feature=False)
         #feature dictionary
         self.FEATURE = { 0:'Action',
