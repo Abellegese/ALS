@@ -67,28 +67,7 @@ class ALSModel(Utils):
         self.feature_item_dict_true = self.get_items()
         #Select item that does not belong to a given feature
         self.feature_item_dict_false = self.get_items(contains_feature=False)
-        #feature dictionary
-        self.FEATURE = { 0:'Action',
-                        1:'Adventure',
-                        2:'Animation',
-                        3:'Children',
-                        4:'Comedy',
-                        5:'Crime',
-                        6:'Documentary',
-                        7:'Drama',
-                        8:'Fantasy',
-                        9:'Film-Noir',
-                        10:'Horror',
-                        11:'Musical',
-                        12:'Mystery',
-                        13:'Romance',
-                        14:'Sci-Fi',
-                        15:'Thriller',
-                        16:'War',
-                        17:'Western',
-                        18:'(no genres listed)',
-                        19:'IMAX'
-                }
+        self.FEATURE = self._get_features_dict()
         #Feature Initialization
         self.feature = np.zeros((len(self.FEATURE), latent_dim))
         #Defining Queue to schedule order execution of the functions in distributed process
