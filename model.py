@@ -16,6 +16,8 @@ class ALSModel(Utils):
     """
     Alternate Least Square Implementation for Recommendation System
     ===============================================================
+    This class Inherited most of the functionality from the base Utils class
+    it help to hide the representation
     Args: data: spasre data for both item and user
           test_data: splited user data form the original sparse
     Returns : ALl the params intialized in the class constructor         
