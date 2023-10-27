@@ -16,15 +16,19 @@ def predict(path, n, fact):
     um, vn, bn = _extract(path)
     #compute the cost
     score = np.inner(um[n], vn) + fact*bn
+    #get the index of the top ranked item
     idx = np.argsort(score[-50:][::-1])
+    #convert them to system id
     item_id = [mapper[i] for i in idx]
     movies = pd.read_csv('data/25m/movies.csv')
+    #search the movies in the csv file
     movies = movies[movies['movieId'].isin(item_id)]
     print(movies[['title','genres']])
 
 #Helper functions
 def _get_item_dict():
     data = Dataset('data/25m/ratings.csv', extens='.csv')
+    #split the data
     datas = data.split()
     return data.process(data.data, ts=0.8)[3]
 
