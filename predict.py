@@ -23,16 +23,18 @@ def predict(path, n, fact):
     movies = pd.read_csv('data/25m/movies.csv')
     #search the movies in the csv file
     movies = movies[movies['movieId'].isin(item_id)]
-    print(movies[['title','genres']])
+    print(movies[['title', 'genres']])
 
 #Helper functions
 def _get_item_dict():
+    #the path for the rating dataset can be changed manually
     data = Dataset('data/25m/ratings.csv', extens='.csv')
     #split the data
     datas = data.split()
     return data.process(data.data, ts=0.8)[3]
 
 def _extract(path):
+    #extract the trained model parameters
     with open(path, 'rb') as f:
         data = pickle.load(f)
     return data['um'], data['vn'], data['bn']
