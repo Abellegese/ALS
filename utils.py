@@ -113,6 +113,7 @@ class Utils:
         return dicts
 
     def compute_cost(self, data):
+        #data: sparse data for user only
         loss, rmse, count = 0, 0, 0
         
         for i in range(len(data)):
