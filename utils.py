@@ -6,7 +6,7 @@ import pandas as pd
 class Utils:
     """Util calss contains extra helper functions for the main model class"""
 
-    def plot(self, file_name, plot, save=True):
+    def plot(self, file_name:str, plot:bool, save=True):
         #Lets only plot RMSE..[Useful metrics]
         fig, ax = plt.subplots(figsize=(14,6))
         plt.subplot(1, 2, 1)  # row 1, column 2, count 1
