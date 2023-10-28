@@ -113,9 +113,8 @@ class Utils:
         return dicts
 
     def compute_cost(self, data):
-        loss = 0
-        rmse = 0
-        count = 0
+        loss, rmse, count = 0, 0, 0
+        
         for i in range(len(data)):
             for n, r in data[i]:
                 error = (r - (np.inner(self.user_matrix[i, :], self.item_matrix[n, :]) + self.user_bias[i] + self.item_bias[n]))**2
