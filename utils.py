@@ -185,6 +185,36 @@ class Utils:
         self.user_bias = np.zeros((self.num_user))
         self.item_bias = np.zeros((self.num_item))
         
+    def embbed_feature(self):
+        """ Method to get the item sample given a feature """
+        #read the data
+        movie = pd.read_csv('data/movies.csv')
+        #creating empty item to collect the sampled movie
+        item_list = []
+        #loop through all the movie and search all the movie item asscociated features
+        for l in self.FEATURE.values():
+            # genre = FEATURE[l]
+            items = movie.loc[movie['genres'].str.contains(l)]
+            items = items['movieId']
+            idx = []
+            #change the system idx to idx
+            for item in items:
+                if item in self.item_dict.keys():
+                    idx.append(self.item_dict[item])
+            #sample 5 items randomly
+            items = pd.DataFrame(idx).sample(5)
+            #store the sampled movie item
+            item_list.append(items.to_numpy())
+
+        return item_list
+
+    def plot_feature(self):
+        item_list = self.embbed_feature()
+        for item in item_list:
+            for i in item:
+                plt.scatter(self.item_matrix[i[0], 0], self.item_matrix[i[0], 1])
+        plt.legend(list(self.FEATURE.values()))
+        
     def _get_features_dict(self):
         return  {   0:'Action',
                     1:'Adventure',
