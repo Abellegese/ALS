@@ -66,6 +66,15 @@ class Utils:
             user_count[index] += 1
 
         return (unique_user, unique_item, user_count, item_count)
+        
+    @staticmethod
+    def plot_rating_dist():
+        #getting rating data
+        ratings = pd.read_csv('data/ratings_small.csv')['rating']
+        unique, count = np.unique(ratings.to_numpy().astype('int'), return_counts=True)
+        plt.bar(unique, count)
+        plt.xlabel('frequency')
+        plt.ylabel('ratings')
 
     def pickle(self):
 
