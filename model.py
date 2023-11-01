@@ -23,15 +23,16 @@ class ALSModel(Utils):
     Returns : ALl the params intialized in the class constructor         
     """
 
-    def __init__(self, data, 
-                       test_data,
-                       mapper,
-                       item_dict,
-                       with_feature=False,
-                       latent_dim=5, 
-                       thau = 0.001,
-                       gamma=0.001,
-                       lamda=0.001
+    def __init__(self, 
+                 data, 
+                 test_data,
+                 mapper,
+                 item_dict,
+                 with_feature=False,
+                 latent_dim=5, 
+                 thau = 0.001,
+                 gamma=0.001,
+                 lamda=0.001
                 ):
 
         self.user_data, self.item_data = data
