@@ -5,7 +5,9 @@
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
 
-The project is aims to create a Collaborative recommenders ystem to predict rating for movie lense dataset. The underlying technique of colaborative filter depend is Matrix factorization and ALS as a optimizer. It is the type of technique used for to work on sparse data.
+The project is aims to create a Collaborative recommenders system to predict rating for movie lense dataset. 
+The underlying technique of colaborative filter depend is Matrix factorization and ALS as a optimizer.
+It is the type of technique used for to work on sparse data.
 
 
 
