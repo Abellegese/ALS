@@ -12,7 +12,11 @@ class Dataset:
     def __init__(self, path, extens='.data'):
         self.path = path
         if extens == '.data':
-            self.data = pd.read_csv(path,header=None,delimiter='\t',names=['userId','movieId','ratings','timestamp']).drop(columns='timestamp')
+            self.data = pd.read_csv(path,
+                                    header=None,
+                                    delimiter='\t',
+                                    names=['userId','movieId','ratings','timestamp']
+                                   ).drop(columns='timestamp')
         else:
             self.data = pd.read_csv(path).drop(columns='timestamp')
 
